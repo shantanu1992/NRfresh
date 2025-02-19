@@ -31,7 +31,7 @@ public class LoginTest {
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("exp-months-droope")));
 		//wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("em[class*='icon edit']")));
 		driver.findElement(By.id("exp-months-droope")).click();
-		driver.findElement(By.cssSelector("a[data-id='exp-months-droope_0']")).click();
+		driver.findElement(By.cssSelector("a[data-id='exp-months-droope_1']")).click();
 		
 		driver.findElement(By.id("saveBasicDetailsBtn")).click();
 	}

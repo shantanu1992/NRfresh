@@ -21,7 +21,7 @@ public class LoginTest {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//input[contains(@placeholder,'Enter your active Email ID')]")));
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Enter your active Email ID')]")).sendKeys("shanmondal92@gmail.com");
-		driver.findElement(By.cssSelector("input[placeholder$='password']")).sendKeys("shantanu");
+		driver.findElement(By.cssSelector("input[placeholder$='password']")).sendKeys("shan12345@123");
 		driver.findElement(By.cssSelector(".loginButton")).click();
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".view-profile-wrapper a")));//
 		driver.findElement(By.cssSelector(".view-profile-wrapper a")).click();
